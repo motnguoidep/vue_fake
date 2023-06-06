@@ -5,6 +5,8 @@
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/buoi3">Buoi3</RouterLink>
+        <RouterLink to="/twitter">Twitter</RouterLink>
+
 
       </nav>
 </template>

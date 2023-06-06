@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import LayoutIndex from '@/layouts/index.vue'
+import LayoutIndex from '@/layouts/Index.vue'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -11,8 +10,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <!-- <HelloWorld msg="You did it!" /> -->
-
-      
     </div>
   </header>
   <LayoutIndex > 
