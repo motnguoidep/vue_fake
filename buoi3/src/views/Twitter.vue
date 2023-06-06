@@ -34,7 +34,7 @@ import axios from "axios";
 import {twitterStore} from "@/stores/twitter";
 import {mapActions, mapState} from "pinia";
 export default defineComponent({
-  name: "",
+  name: " ",
   data() {
     return {
       value: "",
@@ -44,20 +44,20 @@ export default defineComponent({
   created() {
     this.fetchData();
   },
-  computed:{
+  computed: {
     ...mapState(twitterStore, ['posts'])
   },
   // tap hop cac phuong thuc
   methods: {
-    ...mapActions(twitterStore, ['fetchData','delete','update']),
+    ...mapActions(twitterStore, ['fetchData', 'delete', 'update','create']),
     async createPost() {
       let post = {
         content: this.value,
         liked: false,
         date: new Date(),
       };
-       await twitterStore().create(post);
-      this.value = " ";
+      await this.create(post);
+          this.value = " ";
       await this.fetchData();
     },
     async delPost(post) {
